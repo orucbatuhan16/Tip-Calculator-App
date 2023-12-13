@@ -22,8 +22,6 @@ Proje dosyalarını bilgisayarınıza indirin ve aşağıdaki adımları izleyer
 
 3. Projeyi Live Server ile başlatın
 
-4. Tarayıcınızda `http://localhost:3000` adresine gidin.
-
 ## Proje Görünümü
 
 Aşağıda proje hakkında birkaç ekran görüntüsü bulunmaktadır:
