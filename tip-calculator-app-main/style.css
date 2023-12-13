@@ -1,0 +1,197 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --space-mono: "Space Mono", monospace;
+}
+html {
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6em;
+  max-width: 700px; /* ya da istediğiniz bir değer */
+  margin: 0 auto; /* sayfa ortasına almak için */
+  margin-top: 23rem;
+  background-color: var(--White);
+  border-radius: 15px;
+  font-family: var(--space-mono);
+}
+body {
+  background-color: var(--Light-grayish-cyan);
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: calc(-17rem / 2); /* 3 rem yukarıda ortalamak için */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bill_info,
+.tip_info {
+  max-width: 250px;
+  padding: 2rem;
+}
+.span-info {
+  margin-left: 0.75rem;
+}
+#Custom:focus,
+.span-info:focus {
+  border: 2px solid;
+  outline: none;
+  border-color: var(--strong-cyan);
+}
+#Custom {
+  border: none;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+  grid-template-rows: repeat(2, 1fr); /* 2 satır */
+  gap: 0.5rem;
+  font-size: 24px;
+}
+.buttons button {
+  font-family: var(--space-mono);
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  border-radius: 5px;
+}
+.buttons button:active {
+  background-color: var(--strong-cyan);
+  border: none;
+}
+.row {
+  margin-bottom: 2rem;
+}
+.spans {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.spans #zero {
+  font-size: 10px;
+  text-align: right;
+}
+#zero {
+  display: none;
+}
+.tip_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0.75rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+li svg path {
+  fill: var(--strong-cyan);
+}
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--White);
+}
+.value {
+  font-size: 30px;
+  color: var(--strong-cyan);
+}
+
+button.Reset {
+  width: 100%;
+  margin-top: 2.5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  font-family: var(--space-mono);
+  background-color: var(--strong-cyan);
+}
+.Reset:active {
+  background-color: var(--Light-grayish-cyan);
+}
+.span-info {
+  text-align: right;
+  height: 30px;
+  background-color: var(--Very-light-grayish-cyan);
+  font-family: var(--space-mono);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.info span {
+  font-size: 15px;
+}
+.description {
+  flex-direction: column;
+  margin: 0;
+}
+.buttons input {
+  width: 90%;
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--space-mono);
+  background-color: var(--Very-light-grayish-cyan);
+  border-radius: 5px;
+}
+li small {
+  font-size: xx-small;
+  color: var(--Grayish-cyan);
+}
+.dolar {
+  position: relative;
+}
+
+.dolar:before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background: url("images/icon-dollar.svg") center / contain no-repeat;
+}
+.person {
+  position: relative;
+}
+.person:before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background: url("images/icon-person.svg") center / contain no-repeat;
+}
